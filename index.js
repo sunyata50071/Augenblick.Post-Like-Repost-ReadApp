@@ -77,9 +77,9 @@ function getFeedHtml(){
     
     postsData.forEach(function(post){
         
-        const likeIconClass = tweet.isLiked ? "liked" : ""
+        const likeIconClass = post.isLiked ? "liked" : ""
         
-        const retweetIconClass = tweet.isRetweeted ? "retweeted" : ""
+        const retweetIconClass = post.isReposted ? "reposted" : ""
         
         let repliesHtml = ""
         
